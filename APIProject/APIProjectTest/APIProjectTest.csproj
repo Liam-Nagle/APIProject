@@ -84,6 +84,7 @@
     <Compile Include="MusicService\DataHandling\Model.cs" />
     <Compile Include="MusicService\GetTopChartsFromCountryService.cs" />
     <Compile Include="MusicService\HTTPManager\CallManager.cs" />
+    <Compile Include="MusicService\HTTPManager\CountryENUM.cs" />
     <Compile Include="MusicService\TrackSearchByArtistNameService.cs" />
     <Compile Include="Tests\GetLyricsFromLyricsSnipetServiceTests.cs" />
     <Compile Include="Tests\GetTopChartsFromCountryTests.cs" />

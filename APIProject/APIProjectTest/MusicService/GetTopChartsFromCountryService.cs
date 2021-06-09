@@ -22,9 +22,9 @@ namespace APIProjectTest
             TopChartDTO = new DTO<TrackResponse>();
         }
 
-        public async Task MakeGetTopChartsFromCountry(string country, int numSong)
+        public async Task MakeGetTopChartsFromCountry(Countries country, int numSong)
         {
-            TopChartResponse = await CallManager.MakeGetTopChartsFromCountry(country, numSong);
+            TopChartResponse = await CallManager.MakeGetTopChartsFromCountry(country.ToString(), numSong);
 
             Json_Response = JObject.Parse(TopChartResponse);
 
