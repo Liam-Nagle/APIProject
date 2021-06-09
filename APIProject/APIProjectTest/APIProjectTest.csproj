@@ -81,8 +81,8 @@
     <Compile Include="MusicService\DataHandling\IResponse.cs" />
     <Compile Include="MusicService\DataHandling\Model.cs" />
     <Compile Include="MusicService\HTTPManager\CallManager.cs" />
-    <Compile Include="TrackSearchService.cs" />
-    <Compile Include="Tests\TrackSearchServiceTests.cs" />
+    <Compile Include="MusicService\TrackSearchByArtistNameService.cs" />
+    <Compile Include="Tests\TrackSearchByArtistNameServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
