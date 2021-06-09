@@ -77,11 +77,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\AppConfigReader.cs" />
+    <Compile Include="MusicService\DataHandling\LyricSnipetModel.cs" />
+    <Compile Include="MusicService\GetLyricsFromLyricsSnipetService.cs" />
     <Compile Include="MusicService\DataHandling\DTO.cs" />
     <Compile Include="MusicService\DataHandling\IResponse.cs" />
     <Compile Include="MusicService\DataHandling\Model.cs" />
     <Compile Include="MusicService\HTTPManager\CallManager.cs" />
     <Compile Include="MusicService\TrackSearchByArtistNameService.cs" />
+    <Compile Include="Tests\GetLyricsFromLyricsSnipetServiceTests.cs" />
     <Compile Include="Tests\TrackSearchByArtistNameServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
