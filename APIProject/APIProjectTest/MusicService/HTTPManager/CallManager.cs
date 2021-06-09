@@ -55,5 +55,19 @@ namespace APIProjectTest
 
             return response.Content;
         }
+
+        public async Task<string> MakeGetTopChartsFromCountry(string country, int numSong)
+        {
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("Content-Type", "application/json");
+
+            request.Resource = $"chart.tracks.get?chart_name=top&page_size={numSong.ToString()}&country={country}&apikey={AppConfigReader.APIKey}";
+
+            var responce = await _client.ExecuteAsync(request);
+
+            StatusDescription = responce.StatusDescription.ToString();
+
+            return responce.Content;
+        }
     }
 }
