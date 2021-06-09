@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace APIProjectTest.Tests
+namespace APIProjectTest
 {
     class GetLyricsFromLyricsSnipetServiceTests
     {
