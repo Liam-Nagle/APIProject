@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace APIProjectTest
 {
-    interface IResponse
+    public interface IResponse
     {
     }
 }
