@@ -12,7 +12,7 @@ namespace APIProjectTest
         public async Task SetUpAsync()
         {
             _getTopChartsFromCountryService = new GetTopChartsFromCountryService();
-            await _getTopChartsFromCountryService.MakeGetTopChartsFromCountry("UK", 3);
+            await _getTopChartsFromCountryService.MakeGetTopChartsFromCountry(Countries.GB, 3);
         }
 
         [Test]
