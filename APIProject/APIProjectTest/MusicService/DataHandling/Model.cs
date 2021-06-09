@@ -8,12 +8,6 @@ namespace APIProjectTest
 {
     public class TrackResponse : IResponse
     {
-        public int Status { get; set; }
-        public Track[] Result { get; set; }
-    }
-
-    public class Rootobject
-    {
         public Message message { get; set; }
     }
 
@@ -82,5 +76,4 @@ namespace APIProjectTest
         public string music_genre_name_extended { get; set; }
         public string music_genre_vanity { get; set; }
     }
-
 }

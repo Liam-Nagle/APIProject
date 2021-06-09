@@ -29,5 +29,31 @@ namespace APIProjectTest
 
             return response.Content;
         }
+
+        public string MakeGetTrackIDByLyricSnipet(string lyricSnipet)
+        {
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("Content-Type", "application/json");
+
+            request.Resource = $"track.search?&q_lyrics={lyricSnipet}&s_track_rating=desc&page_size=1&apikey={AppConfigReader.APIKey}";
+
+            var response = _client.Execute(request);
+
+            return response.Content;
+        }
+
+        public async Task<string> MakeGetTrackLyricsByTrackIDAsync(int trackid)
+        {
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("Content-Type", "application/json");
+
+            request.Resource = $"track.lyrics.get?&track_id={trackid.ToString()}&apikey={AppConfigReader.APIKey}";
+
+            var response = await _client.ExecuteAsync(request);
+
+            StatusDescription = response.StatusDescription.ToString();
+
+            return response.Content;
+        }
     }
 }
