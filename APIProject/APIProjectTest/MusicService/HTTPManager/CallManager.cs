@@ -30,7 +30,7 @@ namespace APIProjectTest
             return response.Content;
         }
 
-        public string MakeGetTrackIDByLyricSnipet(string lyricSnipet)
+        public string GetTrackIDByLyricSnipet(string lyricSnipet)
         {
             var request = new RestRequest(Method.GET);
             request.AddHeader("Content-Type", "application/json");
@@ -42,7 +42,7 @@ namespace APIProjectTest
             return response.Content;
         }
 
-        public async Task<string> MakeGetTrackLyricsByTrackIDAsync(int trackid)
+        public async Task<string> GetTrackLyricsByTrackIDAsync(int trackid)
         {
             var request = new RestRequest(Method.GET);
             request.AddHeader("Content-Type", "application/json");
