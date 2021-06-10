@@ -29,6 +29,11 @@ namespace APIProjectTest
         public Track_List[] track_list { get; set; }
     }
 
+    public class CopyOfBody
+    {
+        public Track_List[] track_list { get; set; }
+    }
+
     public class Track_List
     {
         public Track track { get; set; }

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="APIProjectTest.DTO&lt;ResponseType&gt;">
+    <Position X="14.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\DTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIProjectTest.LyricSnipetResponse" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>MusicService\DataHandling\LyricSnipetModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="message" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="APIProjectTest.LyricsMessage">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\LyricSnipetModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="body" />
+      <Property Name="header" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIProjectTest.LyricsHeader">
+    <Position X="1" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\LyricSnipetModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIProjectTest.LyricsBody">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\LyricSnipetModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="lyrics" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIProjectTest.Lyrics">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAQAAAAAAAABAAAAAAAACAAAAAIAAAAAIAAAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\LyricSnipetModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIProjectTest.TrackResponse" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>MusicService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="message" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="APIProjectTest.Message">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="body" />
+      <Property Name="header" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIProjectTest.Header">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIProjectTest.Body">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>MusicService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="track_list" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIProjectTest.Track_List">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="track" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIProjectTest.Track">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAACAQgAAEAAARAIAUAAAAAAAAAJAAgACAAAQAJAAA=</HashCode>
+      <FileName>MusicService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="primary_genres" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIProjectTest.Primary_Genres">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="music_genre_list" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIProjectTest.Music_Genre_List">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="music_genre" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIProjectTest.Music_Genre">
+    <Position X="7.25" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQKAAAAAAACAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>MusicService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIProjectTest.CallManager">
+    <Position X="15.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAgAAAAAACEAAAgAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>MusicService\HTTPManager\CallManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIProjectTest.GetLyricsFromLyricsSnipetService">
+    <Position X="12" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAIAAAAAABCAAAAAAAAAAAAAAAAQAAAAIAAAA=</HashCode>
+      <FileName>MusicService\GetLyricsFromLyricsSnipetService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CallManager" />
+      <Property Name="LyricSnipetDTO" />
+      <Property Name="TrackResponseDTO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIProjectTest.GetTopChartsFromCountryService">
+    <Position X="14.5" Y="1.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAECgAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MusicService\GetTopChartsFromCountryService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CallManager" />
+      <Property Name="TopChartDTO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIProjectTest.TrackSearchByArtistNameService">
+    <Position X="18.5" Y="4.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>BACAAABAAAAAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MusicService\TrackSearchByArtistNameService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CallManager" />
+      <Property Name="SingleTrackDTO" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="APIProjectTest.Countries" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>v37n//+9ame/3/oWjt//55OI9vv/fwSA8NO9HYDA9+4=</HashCode>
+      <FileName>MusicService\HTTPManager\CountryENUM.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
