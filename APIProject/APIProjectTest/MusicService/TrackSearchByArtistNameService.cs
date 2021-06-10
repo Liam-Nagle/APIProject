@@ -23,11 +23,11 @@ namespace APIProjectTest
         }
         public async Task MakeHighestRatedTrackByArtistRequestAsync(string artistName, int numSongs)
         {
-            TrackResponse = await CallManager.MakeHighestRatedTrackByArtistRequestAsync(artistName, numSongs);
+                TrackResponse = await CallManager.MakeHighestRatedTrackByArtistRequestAsync(artistName, numSongs);
 
-            Json_Response = JObject.Parse(TrackResponse);
+                SingleTrackDTO.DeserializeResponse(TrackResponse);
 
-            SingleTrackDTO.DeserializeResponse(TrackResponse);
+                Json_Response = JObject.Parse(TrackResponse);
         }
     }
 }
