@@ -41,9 +41,63 @@ namespace APIProjectTest
         }
         [Category("Happy Path")]
         [Test]
+        public void ValidArtistRequestForFirstSong_ReturnsValidSongId()
+        {
+            Assert.That(_trackSearchService.SingleTrackDTO.Response.message.body.track_list[0].track.track_id, Is.EqualTo(83855348));
+        }
+        [Category("Happy Path")]
+        [Test]
         public void ValidArtistRequestForFirstSong_ReturnsValidSongTitleForRequest()
         {
             Assert.That(_trackSearchService.SingleTrackDTO.Response.message.body.track_list[0].track.track_name, Is.EqualTo("The Educated Fool"));
+        }
+        [Category("Happy Path")]
+        [Test]
+        public void ValidArtistRequestForFirstSong_ReturnsValidAlbumnId()
+        {
+            Assert.That(_trackSearchService.SingleTrackDTO.Response.message.body.track_list[0].track.album_id , Is.EqualTo(20845893));
+        }
+        [Category("Happy Path")]
+        [Test]
+        public void ValidArtistRequestForFirstSong_ReturnsValidAlbumnName()
+        {
+            Assert.That(_trackSearchService.SingleTrackDTO.Response.message.body.track_list[0].track.album_name, Is.EqualTo("Virtual XI"));
+        }
+        [Category("Happy Path")]
+        [Test]
+        public void ValidArtistRequestForFirstSong_ReturnsValidArtistId()
+        {
+            Assert.That(_trackSearchService.SingleTrackDTO.Response.message.body.track_list[0].track.artist_id, Is.EqualTo(6781));
+        }
+        [Category("Happy Path")]
+        [Test]
+        public void ValidArtistRequestForFirstSong_ReturnsValidArtistName()
+        {
+            Assert.That(_trackSearchService.SingleTrackDTO.Response.message.body.track_list[0].track.artist_name, Is.EqualTo("Iron Maiden"));
+        }
+        [Category("Happy Path")]
+        [Test]
+        public void ValidArtistRequestForFirstSong_ReturnsValidCommonTrackId()
+        {
+            Assert.That(_trackSearchService.SingleTrackDTO.Response.message.body.track_list[0].track.commontrack_id, Is.EqualTo(805145));
+        }
+        [Category("Happy Path")]
+        [Test]
+        public void ValidArtistRequestForFirstSong_ReturnsHasLyricsValue1IndicatingSongHasLyrics()
+        {
+            Assert.That(_trackSearchService.SingleTrackDTO.Response.message.body.track_list[0].track.has_lyrics, Is.EqualTo(1));
+        }
+        [Category("Happy Path")]
+        [Test]
+        public void ValidArtistRequestForFirstSong_ReturnsHasRichSyncValue0IndicatingSongHasNoRichSync()
+        {
+            Assert.That(_trackSearchService.SingleTrackDTO.Response.message.body.track_list[0].track.has_richsync, Is.EqualTo(0));
+        }
+        [Category("Happy Path")]
+        [Test]
+        public void ValidArtistRequestForFirstSong_ReturnsHasSubtitlesValue1IndicatingSongHasSubtitles()
+        {
+            Assert.That(_trackSearchService.SingleTrackDTO.Response.message.body.track_list[0].track.has_subtitles, Is.EqualTo(1));
         }
         [Category("Happy Path")]
         [Test]
