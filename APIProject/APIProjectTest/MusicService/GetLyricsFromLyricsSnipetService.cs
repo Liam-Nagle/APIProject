@@ -24,13 +24,21 @@ namespace APIProjectTest
 
         public async Task MakeGetLyricsByLyricSnipetAsync(string lyricSnipet)
         {
-            var idResponse = CallManager.MakeGetTrackIDByLyricSnipet(lyricSnipet);
+            var idResponse = CallManager.GetTrackIDByLyricSnipet(lyricSnipet);
+            int trackid;
 
             TrackResponseDTO.DeserializeResponse(idResponse);
 
-            var trackid = TrackResponseDTO.Response.message.body.track_list[0].track.track_id;
+            try
+            {
+                trackid = TrackResponseDTO.Response.message.body.track_list[0].track.track_id;
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                throw new ArgumentException("There were no songs with those lyrics in!");
+            }
 
-            LyricSnipetResponse = await CallManager.MakeGetTrackLyricsByTrackIDAsync(trackid);
+            LyricSnipetResponse = await CallManager.GetTrackLyricsByTrackIDAsync(trackid);
 
             Json_Response = JObject.Parse(LyricSnipetResponse);
 
