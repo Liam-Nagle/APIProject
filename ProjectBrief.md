@@ -73,4 +73,3 @@ In the next sprint now that we have the Framework fully completed we will be loo
 #### Sprint Review
 
 #### Sprint Retrospective
-

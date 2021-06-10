@@ -351,3 +351,4 @@ MigrationBackup/
 
 # Sensitive Information File
 app.config
+/APIProject/APIProjectTest/Config/app.config
