@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Config\app.config" />
+    <None Include="Config\ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
