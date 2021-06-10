@@ -28,7 +28,7 @@ Deliver a test framework for a REST API. The project is done as a group and work
 
 ## Class Diagram
 
-![](D:\SpartaGlobal\APIProject\Images\ClassDiagram.png)
+![](Images/ClassDiagram.png)
 
 ## Sprints
 
@@ -36,7 +36,7 @@ Deliver a test framework for a REST API. The project is done as a group and work
 
 #### Kanban Board at the start
 
-![KanbanBoardSprint1Before](D:\SpartaGlobal\APIProject\Images\KanbanBoardSprint1Before.png)
+![KanbanBoardSprint1Before](Images/KanbanBoardSprint1Before.png)
 
 #### Sprint Goals
 
@@ -50,7 +50,7 @@ Deliver a test framework for a REST API. The project is done as a group and work
 
 #### Kanban Board at the end
 
-![](D:\SpartaGlobal\APIProject\Images\KanbanBoardSprint1End.png)
+![](Images/KanbanBoardSprint1End.png)
 
 #### Sprint Review
 
@@ -66,7 +66,7 @@ In the next sprint now that we have the Framework fully completed we will be loo
 
 #### Kanban Board at the start
 
-![KanbanBoardSprint2Before](D:\SpartaGlobal\APIProject\Images\KanbanBoardSprint2Before.png)
+![KanbanBoardSprint2Before](Images/KanbanBoardSprint2Before.png)
 
 #### Sprint Goals
 
@@ -97,7 +97,7 @@ In the next sprint now that we have the Framework fully completed we will be loo
 
 #### Kanban Board at the end
 
-![KanbanBoardSprint2End](D:\SpartaGlobal\APIProject\Images\KanbanBoardSprint2End.png)
+![KanbanBoardSprint2End](Images/KanbanBoardSprint2End.png)
 
 #### Sprint Review
 
