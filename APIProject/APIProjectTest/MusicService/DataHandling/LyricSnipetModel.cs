@@ -8,13 +8,13 @@ namespace APIProjectTest
 {
     public class LyricSnipetResponse : IResponse
     {
-        public Message message { get; set; }
+        public LyricsMessage message { get; set; }
     }
 
     public class LyricsMessage
     {
-        public Header header { get; set; }
-        public Body body { get; set; }
+        public LyricsHeader header { get; set; }
+        public LyricsBody body { get; set; }
     }
 
     public class LyricsHeader
